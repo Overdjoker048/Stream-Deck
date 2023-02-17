@@ -1,0 +1,27 @@
+{
+  "graphic": {
+    "first": "white",
+    "second": "#252525",
+    "texture": "assets/white_key.png"
+  },
+  "protocol": {  
+    "button1": "app",
+    "button2": "py",
+    "button3": "web",
+    "button4": "py",
+    "button5": "app",
+    "button6": "web",
+    "button7": "web",
+    "button8": "app"
+  },
+  "path": {
+    "button1": "",
+    "button2": "",
+    "button3": "",
+    "button4": "",
+    "button5": "",
+    "button6": "",
+    "button7": "",
+    "button8": ""
+  }
+}
