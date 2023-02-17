@@ -2,9 +2,10 @@ from tkinter import *
 from tkinter import messagebox
 from webbrowser import open
 from os import system
-import themes
+import themes, edit
 
 def run():
+
     color = themes.get_theme()
 
     window = Tk()
@@ -24,11 +25,16 @@ def run():
 
     menu_themes = Menu(menu, tearoff=0)
     menu.add_cascade(label="Themes", menu=menu_themes)
-    menu_themes.add_command(label="Dark", command=lambda: [themes.set("#252525", "white", "assets/black_key.png")])
+    menu_themes.add_command(label="Dark", command=lambda: [themes.set("#353535", "white", "assets/black_key.png")])
     menu_themes.add_command(label="Light", command=lambda: [themes.set("white", "#252525", "assets/white_key.png")])
 
-    menu.add_command(label="Edit")
+    menu_edit = Menu(menu, tearoff=0)
+    menu.add_cascade(label="Edit", menu=menu_edit)
+    menu_edit.add_command(label="Python", command=lambda: [edit.py()])
+    menu_edit.add_command(label="Web", command=lambda: [edit.run("web", "URL")])
+    menu_edit.add_command(label="Application", command=lambda: [edit.run("app", "Name")])
+
     menu.add_command(label="Exit", command=lambda: [window.destroy()])
-    menu.add_command(label="Help", command=lambda: [messagebox.showinfo(title="Stream Deck | Help", message="Name: Stream Deck\nBy Overdjoker048\nUpdate: Bêta 1.0\nSource:")])
+    menu.add_command(label="Help", command=lambda: [messagebox.showinfo(title="Stream Deck | Help", message="Name: Stream Deck\nBy Overdjoker048\nUpdate: Bêta 1.0\nSource: https://github.com/Overdjoker048/Stream-Deck")])
 
     window.mainloop()
