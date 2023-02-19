@@ -1,5 +1,39 @@
 {
-  "first": "white",
-  "second": "#252525",
-  "texture": "assets/white_key.png"
+  "graphic": {
+    "first": "#353535",
+    "second": "white",
+    "texture": "assets\\black_key.png"
+  },
+  "button1": {
+    "protocol": "",
+    "path": ""
+  },
+  "button2": {
+    "protocol": "",
+    "path": ""
+  },
+  "button3": {
+    "protocol": "",
+    "path": ""
+  },
+  "button4": {
+    "protocol": "",
+    "path": ""
+  },
+  "button5": {
+    "protocol": "",
+    "path": ""
+  },
+  "button6": {
+    "protocol": "",
+    "path": ""
+  },
+  "button7": {
+    "protocol": "",
+    "path": ""
+  },
+  "button8": {
+    "protocol": "",
+    "path": ""
+  }
 }

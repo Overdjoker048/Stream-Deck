@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Stream Deck"
-#define MyAppVersion "Bêta 1.0"
+#define MyAppVersion "Beta 1.0"
 #define MyAppPublisher "Stream Deck"
 #define MyAppURL "https://github.com/Overdjoker048/Stream-Deck"
 #define MyAppExeName "Stream Deck.exe"
